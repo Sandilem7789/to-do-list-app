@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function addTask(taskText) {
         const li = document.createElement("li");
-        li.innerHTML = `${taskText} <button onclick="removeTask(this)">❌</button>`;
+        li.innerHTML = `${taskText} <button id="deleteButton" onclick="removeTask(this)">❌</button>`;
         taskList.appendChild(li);
 
         saveTasks();
@@ -37,5 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadTasks() {
         let savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
         savedTasks.forEach(task => addTask(task));
+        
     }
 });
