@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(194, 175, 175);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #e9ecef;
+    margin: 5px 0;
+}
