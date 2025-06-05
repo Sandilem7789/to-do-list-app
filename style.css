@@ -29,7 +29,7 @@ button {
 #deleteButton {
     border: none;
     border-radius: 4px;
-    width: 30%;
+    width: 25%;
 }
 
 ul {
@@ -39,6 +39,7 @@ ul {
 
 li {
     display: flex;
+    align-items: center;         /* Vertically center all children */
     justify-content: space-between;
     padding: 10px;
     background: #e9ecef;
@@ -47,6 +48,14 @@ li {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
     text-align: center;
+    gap: 10px;                   /* Optional: space between items */
+}
+
+.task-checkbox {
+    margin-left: 5px 0px 5px 0;           /* Push checkbox to the far right */
+    transform: scale(1.2);       /* Optional: make checkbox a bit bigger */
+    width: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
